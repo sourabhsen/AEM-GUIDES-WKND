@@ -1,0 +1,31 @@
+name: Bitbucket Integration
+
+on:
+    repository_dispatch:
+        types: [update-tokens]
+  
+
+jobs:
+  interact-with-bitbucket:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Push to Bitbucket
+        env:
+          BITBUCKET_USERNAME: ${{ secrets.BITBUCKET_USERNAME }}
+          BITBUCKET_APP_PASSWORD: ${{ secrets.BITBUCKET_APP_PASSWORD }}
+        run: |
+          python -c "import requests bitbucket_username = '${{ secrets.BITBUCKET_USERNAME }}' bitbucket_app_password = '${{ secrets.BITBUCKET_APP_PASSWORD }}' repo_slug = 'uxdia' workspace = 'sourabhsen05' branch = 'StorybookSetup' url = f'https://api.bitbucket.org/2.0/repositories/{workspace}/{repo_slug}/refs/branches/{branch}' response = requests.post(url, auth=(bitbucket_username, bitbucket_app_password)) print(response.json())
+          "
