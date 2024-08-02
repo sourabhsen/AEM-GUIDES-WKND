@@ -1,0 +1,30 @@
+:root {
+  --uxdia-color-primary: #0045ffff;
+  --uxdia-color-secondary: #202020ff;
+  --uxdia-color-tertiary: #696969ff;
+  --uxdia-brandprimary: #ff0058ff;
+  --uxdia-color-header: #ffea00ff;
+  --uxdia-color-white: #ffffffff;
+  --uxdia-color-tertiary-light: #ebebebff;
+  --uxdia-color-tertiary-lighter: #f7f7f7ff;
+  --uxdia-gutter-padding: 14;
+  --uxdia-max-width: 1164;
+  --uxdia-max-body-width: 1680;
+  --uxdia-screen-xsmall: 475;
+  --uxdia-screen-small: 767;
+  --uxdia-screen-large: 1200;
+  --uxdia-screen-medium: 1024;
+  --uxdia-max_col: 12;
+  --uxdia-font-size-base: 16;
+  --uxdia-fontsizelarge: 24;
+  --uxdia-fontsizexlarge: 48;
+  --uxdia-fontsizemedium: 18;
+  --uxdia-fontsizesmall: 14;
+  --uxdia-fontsizexsmall: 12;
+  --uxdia-fontsizeh1: 40;
+  --uxdia-fontsizeh2: 36;
+  --uxdia-fontsizeh3: 24;
+  --uxdia-fontsizeh4: 16;
+  --uxdia-fontsizeh5: 14;
+  --uxdia-fontsizeh6: 10;
+}
