@@ -21,7 +21,9 @@
     "storybook": "storybook dev -p 9001",
     "acme": "DEBUG=acme:* acme pull --config acme.settings.json -d storybook-assets && DEBUG=acme:* acme create -s storybook-assets --config acme.settings.json",
     "content-pull": "DEBUG=acme:* acme pull --config acme.settings.json -d storybook-assets",
-    "generate-stories": "DEBUG=acme:* npx acme create -s storybook-assets [--config acme.settings.json]"
+    "generate-stories": "DEBUG=acme:* npx acme create -s storybook-assets [--config acme.settings.json]",
+    "convert-tokens": "node scripts/convert-tokens.js",
+    "figma-tokens": "node scripts/tokens.js"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
