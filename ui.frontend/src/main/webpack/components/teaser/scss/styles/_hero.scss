@@ -72,10 +72,10 @@ $mobile-max-height: 400px;
             min-height: 180px;
             float: left;
             padding-bottom: 0px;
-            width: $max-width - ($gutter-padding * 2);
+          
             position: relative;
-            padding-left: $gutter-padding * 2;
-            padding-right: $gutter-padding * 2;
+            padding-left: $gutter-padding-double;
+            padding-right: $gutter-padding-double;
         }
      }
     

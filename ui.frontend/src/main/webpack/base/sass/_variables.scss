@@ -18,28 +18,30 @@
 //
 //## Gray and brand colors for use across theme.
 
-$black:                  #202020;
-$gray:                   #696969;
-$gray-light:             #EBEBEB;
-$gray-lighter:           #F7F7F7;
-$white:                  #ffffff;
+$black:                  var(--uxdia-color-secondary);
+$gray:                   var(--uxdia-color-tertiary);
+$gray-light:             var(--uxdia-color-tertiary-light);
+$gray-lighter:           var(--uxdia-color-tertiary-lighter);
+$white:                  var(--uxdia-color-white);
 
-$yellow:                 #FFEA00;
-$blue:                   #0045FF;
-$pink:                   #FF0058;
+$yellow:                 var(--uxdia-color-header);
+$blue:                   var(--uxdia-color-primary);
+$pink:                   var(--uxdia-brandPrimary);
 
 
 $brand-primary:           var(--brandPrimary, $yellow);
 
 //== Layout
-$gutter-padding: 14px;
+$gutter-padding: var(--uxdia-gitter-padding)px;
+$gutter-padding-double: 28px;
+$gutter-padding-half: 7px;
 
-$max-width: 1164px;
-$max-body-width: 1680px;
-$screen-xsmall: 475px;
-$screen-small: 767px;
-$screen-medium: 1024px;
-$screen-large: 1200px;
+$max-width: var(--uxdia-max-width)px;
+$max-body-width: var(--uxdia-max-body-width)px;
+$screen-xsmall: var(--uxdia-screen-xsmall)px;
+$screen-small: var(--uxdia-screen-small)px;
+$screen-medium: var(--uxdia-screen-medium)px;
+$screen-large: var(--uxdia-screen-large)px;
 
 //== Scaffolding
 //
@@ -79,23 +81,23 @@ $font-family-sans-serif:  var(--fontFamilySansSerif, $font-family-sans-serif-def
 $font-family-serif:       var(--fontFamilySerif, $font-family-serif-default);
 $font-family-base:        $font-family-sans-serif;
 
-$font-size-base:          18px;
-$font-size-large:         var(--fontSizeLarge, 24px);
-$font-size-xlarge:        var(--fontSizeXLarge, 48px);
-$font-size-medium:		  var(--fontSizeMedium, 18px);
-$font-size-small:         var(--fontSizeSmall, 14px);
-$font-size-xsmall:		  var(--fontSizeXSmall, 12px);
+$font-size-base:         var(--uxdia-font-size-base)px;
+$font-size-large:         var(--uxdia-fontSizeLarge, 24px);
+$font-size-xlarge:        var(--uxdia-fontSizeXLarge, 48px);
+$font-size-medium:		  var(--uxdia-fontSizeMedium, 18px);
+$font-size-small:         var(--uxdia-fontSizeSmall, 14px);
+$font-size-xsmall:		  var(--uxdia-fontSizeXSmall, 12px);
 
-$font-size-h1:            var(--fontSizeH1, 40px);
-$font-size-h2:            var(--fontSizeH2, 36px);
-$font-size-h3:            var(--fontSizeH3, 24px);
-$font-size-h4:            var(--fontSizeH4, 16px);
-$font-size-h5:            var(--fontSizeH5, 14px);
-$font-size-h6:            var(--fontSizeH6, 10px);
+$font-size-h1:            var(--uxdia-fontSizeH1, 40px);
+$font-size-h2:            var(--uxdia-fontSizeH2, 36px);
+$font-size-h3:            var(--uxdia-fontSizeH3, 24px);
+$font-size-h4:            var(--uxdia-fontSizeH4, 16px);
+$font-size-h5:            var(--uxdia-fontSizeH5, 14px);
+$font-size-h6:            var(--uxdia-fontSizeH6, 10px);
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.5;
-$line-height-computed:    floor(($font-size-base * $line-height-base)); // ~20px
+$line-height-computed:    20px;
 
 $font-weight-light:      var(--fontWeightLight, 300);
 $font-weight-normal:     var(--fontWeightNormal, normal);

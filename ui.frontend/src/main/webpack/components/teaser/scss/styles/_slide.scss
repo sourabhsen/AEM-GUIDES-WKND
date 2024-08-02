@@ -48,7 +48,7 @@ $slide-content-width: 450px;
             left: 0;
             right: 0;
             position: absolute;
-            left: $gutter-padding * 2;
+            left: $gutter-padding-double;
             bottom: 8em;
 
             @media (max-width: $screen-medium) {

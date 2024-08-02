@@ -17,8 +17,8 @@
  .cmp-image {
 	
 	.cmp-image__image {
-        margin-top: calc($gutter-padding / 2);
-        margin-bottom: calc($gutter-padding / 2);
+        margin-top: $gutter-padding-half;
+        margin-bottom: $gutter-padding-half;
     	width: 100%;
 		height: auto;
 	}
